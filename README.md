@@ -89,11 +89,11 @@ Here is the bar plot:
 
 #### NEUTRAL
 
-![image](https://github.com/SuryaAbdillah/Cyberdas_Text-Mining_Sentiment-Analysis/assets/97737970/02b865ba-8e1f-4ea0-a92a-aa9c1ad04c80)
+![image](https://github.com/SuryaAbdillah/Cyberdas_Text-Mining_Sentiment-Analysis/assets/97737970/d85c439e-3fb6-4344-b2aa-f095f4c70276)
 
 #### POSITIVE
 
-![image](https://github.com/SuryaAbdillah/Cyberdas_Text-Mining_Sentiment-Analysis/assets/97737970/5e46e4ec-f6d5-4c59-bb38-b39c799a985c)
+![image](https://github.com/SuryaAbdillah/Cyberdas_Text-Mining_Sentiment-Analysis/assets/97737970/7748228e-3c90-49ba-a1ee-3a59c1810260)
 
 ## Topic Modelling
 
