@@ -75,12 +75,12 @@ This command will resulting an dictionary consist of 4 keys:
 
 From our dataset we get distribution of sentiments are:
 - negative : 9,663
-- neutral : 24,126
-- positive : 466,247
+- neutral : 466,247
+- positive : 24,126 
 
 Here is the bar plot:
 
-![image](https://github.com/SuryaAbdillah/Cyberdas_Text-Mining_Sentiment-Analysis/assets/97737970/17577752-d711-4124-95b5-8110d1de4967)
+![image](https://github.com/SuryaAbdillah/Cyberdas_Text-Mining_Sentiment-Analysis/assets/97737970/81f2167c-3b1a-4927-96fc-66f367a26009)
 
 ### WordCloud (using top 30)
 #### NEGATIVE
@@ -124,7 +124,27 @@ We are using BERTopic with default parameter, and here is the result:
 
 ### Using LDA (Latent Dirichlet Allocation)
 
-With LDA we did hyperparameter tuning for some parameters in this research we will try to extract 5 until 11 topics, then we count the coherence score and choose best parameter with highest coherence score for out final model
+With LDA we did hyperparameter tuning for some parameters in this research we will try to extract 5 until 10 topics, then we count the coherence score and choose best parameter with highest coherence score for out final model. We also do hyperparameter tuning for alpha and beta parameter. Here are the best parameter for negative and positive sentiment.
+- negative : 8 number of topics, alpha asymmetric, and beta 0.9099999999999999, get coherence score 0.534063
+- neutral : did not do hyperparameter tuning due to computation time
+- positive : 10 number of topics, alpha asymmetric, and beta 0.9099999999999999, get coherence score 0.481157
 
 #### NEGATIVE
 
+![image](https://github.com/SuryaAbdillah/Cyberdas_Text-Mining_Sentiment-Analysis/assets/97737970/567abc0b-3c1a-428c-8eb8-3c04cbbe2577)
+
+From this plot we can conclude that best number of topics is 8
+
+![image](https://github.com/SuryaAbdillah/Cyberdas_Text-Mining_Sentiment-Analysis/assets/97737970/4419a706-b030-4f90-a3ec-999965c27002)
+
+#### POSITIVE
+
+![image](https://github.com/SuryaAbdillah/Cyberdas_Text-Mining_Sentiment-Analysis/assets/97737970/898ab7cf-9205-436f-9619-eee031f627c0)
+
+From this plot we can conclude that best number of topics is 10
+
+![image](https://github.com/SuryaAbdillah/Cyberdas_Text-Mining_Sentiment-Analysis/assets/97737970/fde8813c-c590-4e16-a418-39fa0a1565bf)
+
+# Conclusion
+
+From our research we can conclude that most sentiment are neutral, then positive and negative with distribution 93.2%, 4.8%, and 1.9% respectively. The topic from each sentiment could be retrieved using BERTopic or LDA (latent dirichlet allocation). Both method can retrieve good topic extraxtion, however hyperpearamter tuning in LDA take so long time and BERTopic resulted too many topics so it is hard to conclude the main topic. Stemming that used in data preprocessing actually helps with unifiying the plural to singular, but it made other word wrong for example machine to machin. So in the future research, it is better tp remove this step. Also, in this research we proceed the data with same steps, in the future we can divide the data by time, so it can show the changes of sentiment year by year. 
