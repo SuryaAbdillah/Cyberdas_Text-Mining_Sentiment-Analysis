@@ -74,9 +74,9 @@ This command will resulting an dictionary consist of 4 keys:
 - compound: The overall sentiment intensity score, which can be used to classify the text as positive, negative, or neutral.
 
 From our dataset we get distribution of sentiments are:
-- negative : 466,247
+- negative : 9,663
 - neutral : 24,126
-- positive : 9,663
+- positive : 466,247
 
 Here is the bar plot:
 
